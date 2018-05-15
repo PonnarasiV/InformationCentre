@@ -1,6 +1,8 @@
 version: '3'
 services:
-  web: 
-    image: athiraakhil16/mydocker3 
+  containerA:
+    image: athiraakhil16/mydocker3
+  containerB:
+    build: .
     ports: 
       - "8080:8080"
