@@ -2,6 +2,5 @@ version: '3'
 services:
   containerA:
     image: athiraakhil16/mydocker3
-    ports:
-      -"9008:9007"
+    ports: "9008:9007"
     
