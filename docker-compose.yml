@@ -2,5 +2,5 @@ version: '2'
 services:
   jenkins:
     image: athiraakhil16/mydocker3
-    ports: "8080:8080"
+    
     
