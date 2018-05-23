@@ -1,6 +1,7 @@
 version: '3'
 services:
-  web:
+  jenkins:
     image: athiraakhil16/mydocker3
-    ports: -"9009:9008"
+    ports: 
+      -"8080:8080"
     
