@@ -1,6 +1,10 @@
-version: '2'
+version: '3'
+
 services:
-  jenkins:
+  web:
     image: athiraakhil16/mydocker3
-    
-    
+    build: .
+    ports:
+      - "8000:8000"
+  redis:
+    image: redis:alpine
