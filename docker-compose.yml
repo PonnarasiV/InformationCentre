@@ -1,4 +1,4 @@
-version: '3'
+version: '2'
 services:
   jenkins:
     image: athiraakhil16/mydocker3
