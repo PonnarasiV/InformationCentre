@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: athiraakhil16/mydocker3
+    image: athiraakhil16/dockerpoc
     build: .
     ports:
       - "8001:8001"
