@@ -5,25 +5,14 @@ services:
     image: athiraakhil16/dockerpoc
     deploy:
       replicas: 3
-      restart_policy:
-        condition: on-failure
       resources:
         limits:
           cpus: "0.1"
           memory: 50M
+      restart_policy:
+        condition: on-failure
     ports:
       - "8082:8082"
-    networks:
-      - webnet
-  visualizer:
-    image: dockersamples/visualizer:stable
-    ports:
-      - "8081:8081"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
-    deploy:
-      placement:
-        constraints: [node.role == manager]
     networks:
       - webnet
 networks:
