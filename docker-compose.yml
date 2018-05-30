@@ -18,7 +18,7 @@ services:
   visualizer:
     image: dockersamples/visualizer:stable
     ports:
-      - "9010:8080"
+      - "8082:8082"
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock"
     deploy:
