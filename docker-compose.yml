@@ -2,28 +2,17 @@ version: "3"
 services:
   web:
     # replace username/repo:tag with your name and image details
-    image: athiraakhil16/dockerpoc:latest
+    image: athiraakhil16/dockerpoc
     deploy:
       replicas: 3
-      restart_policy:
-        condition: on-failure
       resources:
         limits:
           cpus: "0.1"
           memory: 50M
+      restart_policy:
+        condition: on-failure
     ports:
       - "9010:8080"
-    networks:
-      - webnet
-  visualizer:
-    image: dockersamples/visualizer:stable
-    ports:
-      - "8082:8082"
-    volumes:
-      - "/var/run/docker.sock:/var/run/docker.sock"
-    deploy:
-      placement:
-        constraints: [node.role == manager]
     networks:
       - webnet
 networks:
