@@ -12,7 +12,7 @@ services:
       restart_policy:
         condition: on-failure
     ports:
-      - "9010:8080"
+      - "8080:9010"
     networks:
       - webnet
 networks:
