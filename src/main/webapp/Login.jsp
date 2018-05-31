@@ -10,7 +10,7 @@
 <body>
 	<center>
 	<h1>
-	Boeing-DevOps_Demo_19Oct
+	POC3_Demo_DockerSwarm
 	</h1>
 	</center>
 	<div style="width: 102%;
