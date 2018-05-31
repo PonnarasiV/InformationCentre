@@ -12,7 +12,7 @@ services:
     networks:
       - webnet
       
-   app:
+  app:
     # replace username/repo:tag with your name and image details
     image: athiraakhil16/mydocker3
     deploy:
@@ -21,5 +21,7 @@ services:
         condition: on-failure
     ports:
       - "9011:8080"
+    networks:
+      - webnet
 networks:
   webnet:
