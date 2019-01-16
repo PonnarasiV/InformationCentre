@@ -8,7 +8,7 @@ public class LoginIT {
 	public static String a;
 	public static String b;
 	public static void main(String[] args) throws InterruptedException {
-		// TODO Auto-generated method stub
+		// TODO Auto-generated method stubs
 		WebDriver driver=new InternetExplorerDriver();
 		driver.get("http://localhost:8008/InformationCentre/Login.jsp");
 		Thread.sleep(2000);
